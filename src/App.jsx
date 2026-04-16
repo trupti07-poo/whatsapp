@@ -142,20 +142,3 @@ const styles = {
     transition: "0.3s",
   },
 };
-
-/* Add animation globally */
-const styleSheet = document.styleSheets[0];
-const keyframes = `
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(30px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}`;
-if (styleSheet) {
-  styleSheet.insertRule(keyframes, styleSheet.cssRules.length);
-}
